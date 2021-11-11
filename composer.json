@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "learnkit/entree-arp-service",
+    "description": "This is my package entree-arp-service",
     "keywords": [
-        ":vendor_name",
+        "LearnKit",
         "laravel",
-        ":package_slug"
+        "entree-arp-service"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/learnkit-dev/entree-arp-service",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Sebastiaan Kloos",
+            "email": "sebastiaan@codecycler.com",
             "role": "Developer"
         }
     ],
@@ -34,13 +34,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "LearnKit\\EntreeArpService\\": "src",
+            "LearnKit\\EntreeArpService\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "LearnKit\\EntreeArpService\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -54,10 +54,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "LearnKit\\EntreeArpService\\EntreeArpServiceServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\SkeletonFacade"
+                "EntreeArpService": "LearnKit\\EntreeArpService\\EntreeArpServiceFacade"
             }
         }
     },
