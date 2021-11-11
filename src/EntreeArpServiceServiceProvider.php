@@ -2,9 +2,9 @@
 
 namespace LearnKit\EntreeArpService;
 
+use LearnKit\EntreeArpService\Commands\EntreeArpServiceCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use LearnKit\EntreeArpService\Commands\EntreeArpServiceCommand;
 
 class EntreeArpServiceServiceProvider extends PackageServiceProvider
 {
