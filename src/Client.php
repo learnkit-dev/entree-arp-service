@@ -3,7 +3,6 @@
 namespace LearnKit\EntreeArpService;
 
 use GuzzleHttp\Client as Guzzle;
-use GuzzleHttp\Exception\GuzzleException;
 
 class Client
 {
