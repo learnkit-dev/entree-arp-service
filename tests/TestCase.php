@@ -3,8 +3,8 @@
 namespace LearnKit\EntreeArpService\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Orchestra\Testbench\TestCase as Orchestra;
 use LearnKit\EntreeArpService\EntreeArpServiceServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {
