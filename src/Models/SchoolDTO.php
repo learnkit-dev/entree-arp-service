@@ -8,8 +8,13 @@ class SchoolDTO
 {
     use HasAttributes;
 
-    protected $attributes = [
-        'brin',
-        'friendlyName',
-    ];
+    public function __construct($data = [])
+    {
+        $this->setRawAttributes($data);
+
+        $this->attributes = [
+            'brin',
+            'friendlyName',
+        ];
+    }
 }

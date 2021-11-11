@@ -35,8 +35,7 @@
     },
     "autoload": {
         "psr-4": {
-            "LearnKit\\EntreeArpService\\": "src",
-            "LearnKit\\EntreeArpService\\Database\\Factories\\": "database/factories"
+            "LearnKit\\EntreeArpService\\": "src"
         }
     },
     "autoload-dev": {

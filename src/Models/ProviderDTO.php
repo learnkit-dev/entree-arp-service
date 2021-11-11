@@ -8,8 +8,13 @@ class ProviderDTO
 {
     use HasAttributes;
 
-    protected $attributes = [
-        'friendlyName',
-        'organisationCode',
-    ];
+    public function __construct($data = [])
+    {
+        $this->setRawAttributes($data);
+
+        $this->attributes = [
+            'friendlyName',
+            'organisationCode',
+        ];
+    }
 }
