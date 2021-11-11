@@ -2,7 +2,6 @@
 
 namespace LearnKit\EntreeArpService;
 
-use LearnKit\EntreeArpService\Commands\EntreeArpServiceCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -17,9 +16,6 @@ class EntreeArpServiceServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('entree-arp-service')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_entree-arp-service_table')
-            ->hasCommand(EntreeArpServiceCommand::class);
+            ->hasConfigFile();
     }
 }
