@@ -2,19 +2,13 @@
 
 namespace LearnKit\EntreeArpService\Models;
 
-use Illuminate\Database\Eloquent\Concerns\HasAttributes;
+use LearnKit\EntreeArpService\ArpModel;
 
-class SchoolDTO
+class SchoolDTO extends ArpModel
 {
-    use HasAttributes;
-
-    public function __construct($data = [])
-    {
-        $this->setRawAttributes($data);
-
-        $this->attributes = [
-            'brin',
-            'friendlyName',
-        ];
-    }
+    protected $attributes = [
+        'brin',
+        'friendlyName',
+        'friendlyNameWithBrin',
+    ];
 }

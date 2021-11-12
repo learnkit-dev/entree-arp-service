@@ -21,6 +21,8 @@ class EntreeArpService
         $collection = collect();
 
         foreach ($response as $school) {
+            $school['friendlyNameWithBrin'] = "{$school['friendlyName']} - {$school['brin']}";
+
             $collection->push(new SchoolDTO($school));
         }
 

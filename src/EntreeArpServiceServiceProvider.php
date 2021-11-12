@@ -2,20 +2,14 @@
 
 namespace LearnKit\EntreeArpService;
 
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
+use Illuminate\Support\ServiceProvider;
 
-class EntreeArpServiceServiceProvider extends PackageServiceProvider
+class EntreeArpServiceServiceProvider extends ServiceProvider
 {
-    public function configurePackage(Package $package): void
+    public function boot()
     {
-        /*
-         * This class is a Package Service Provider
-         *
-         * More info: https://github.com/spatie/laravel-package-tools
-         */
-        $package
-            ->name('entree-arp-service')
-            ->hasConfigFile();
+        $this->publishes([
+            __DIR__.'/../config/entree-arp-service.php' => config_path('entree-arp-service.php'),
+        ]);
     }
 }
