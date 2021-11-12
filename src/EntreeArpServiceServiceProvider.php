@@ -10,6 +10,6 @@ class EntreeArpServiceServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__.'/../config/entree-arp-service.php' => config_path('entree-arp-service.php'),
-        ], 'entree-arp-service');
+        ]);
     }
 }
