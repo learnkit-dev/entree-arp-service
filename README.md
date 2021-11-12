@@ -16,7 +16,7 @@ composer require learnkit/entree-arp-service
 
 You can publish the config file with:
 ```bash
-php artisan vendor:publish --tag="entree-arp-service_without_prefix-config"
+php artisan vendor:publish --tag="entree-arp-service"
 ```
 
 ## Usage
@@ -31,16 +31,6 @@ $service->schoolList();
 $service->spList();
 ```
 
-## Testing
-
-```bash
-composer test
-```
-
-## Changelog
-
-Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
-
 ## Contributing
 
 Please see [CONTRIBUTING](.github/CONTRIBUTING.md) for details.
@@ -51,9 +41,12 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [Sebastiaan Kloos](https://github.com/sebastiaankloos)
+- [Sebastiaan Kloos (Codecycler)](https://github.com/sebastiaankloos)
 - [All Contributors](../../contributors)
 
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+
+---
+*Sponsored by [Codecycler](https://codecycler.dev?ref=package-learnkit_entree-arp-service)*
