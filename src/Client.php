@@ -18,7 +18,7 @@ class Client
         //
         $this->guzzle = new Guzzle([
             'base_uri' => config('entree-arp-service.arp_service_url'),
-            'timeout' => 2.0,
+            'timeout' => 5.0,
             'headers' => [
                 'apiKey' => $this->apiKey,
             ],
