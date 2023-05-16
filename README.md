@@ -1,9 +1,9 @@
-# This is my package entree-arp-service
+# Entree ARP service
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/learnkit-dev/entree-arp-service.svg?style=flat-square)](https://packagist.org/packages/learnkit/entree-arp-service)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/learnkit-dev/entree-arp-service/run-tests?label=tests)](https://github.com/learnkit/entree-arp-service/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/learnkit-dev/entree-arp-service/Check%20&%20fix%20styling?label=code%20style)](https://github.com/learnkit/entree-arp-service/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/learnkit-dev/entree-arp-service.svg?style=flat-square)](https://packagist.org/packages/learnkit/entree-arp-service)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/learnkit/entree-arp-service.svg?style=flat-square)](https://packagist.org/packages/learnkit/entree-arp-service)
+[![Total Downloads](https://img.shields.io/packagist/dt/learnkit/entree-arp-service.svg?style=flat-square)](https://packagist.org/packages/learnkit/entree-arp-service)
+
+This package is a convienent client for the [Entree ARP service](https://developers.wiki.kennisnet.nl/index.php?title=KNF:ARP_service).
 
 ---
 ## Installation
@@ -15,6 +15,7 @@ composer require learnkit/entree-arp-service
 ```
 
 You can publish the config file with:
+
 ```bash
 php artisan vendor:publish --tag="entree-arp-service"
 ```
